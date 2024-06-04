@@ -1,0 +1,101 @@
+// HEADER STYLES
+header {
+    border-bottom: solid black 1px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.header-container nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header-container nav ul li {
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 100;
+    // font-style: italic;
+}
+
+.header-container nav ul li a {
+    color: black;
+}
+
+.header-container h1 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+// HOME HEADER
+.home-header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+// DROPDOWN MENU
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    border: black 1px solid;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 0;
+    min-width: calc(100dvw - 40px);
+    right: 0;
+    margin: 0 auto;
+    top: 34.2px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.dropdown a:hover {background-color: #ffffff;}
+
+.show {display: block;}
+
+// MEDIA QUERIES
+// MOBILE
+@media (max-width: 768px) {
+    .header-container nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+}

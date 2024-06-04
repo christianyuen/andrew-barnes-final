@@ -1,0 +1,70 @@
+.portfolio-container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.portfolio-img-container {
+    border: 1px solid black;
+    padding: 20px;
+    width: 66%;
+    margin-top: 20px;
+}
+
+.portfolio-img-container h2 {
+    padding: 0px;
+    margin: 0;
+}
+
+.portfolio-img-container p {
+    padding: 0px;
+    margin: 0;
+}
+
+.portfolio-img-container img {
+    width: 100%;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+    /* Default to hidden */
+    display: none;
+
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 20px;
+
+    /* Translucent background */
+    background: white;
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+    display: block;
+}
+
+.lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+// MEDIA QUERIES
+@media (max-width: 768px) {
+    .portfolio-img-container {
+        width: 100%;
+    }
+}
