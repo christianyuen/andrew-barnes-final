@@ -399,6 +399,7 @@ span {
 .portfolio-img-container {
   border: 1px solid black;
   padding: 20px;
+  padding-bottom: 10px;
   width: 66%;
   margin-top: 20px;
 }
